@@ -1,10 +1,3 @@
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-h2 {
-  font-weight: bold;
-}
 .container {
   max-width: 800px;
   width: 100%;
@@ -143,19 +136,46 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  box-sizing: border-box;
+}
 .home {
+  background: url("../images/bg_image_mountains.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .home h1 {
-  margin-bottom: 15px;
+  margin: 25px 0;
+  color: #23293b;
+  font-size: 3rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.home h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #23293b;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 .home header {
   margin-top: 30px;
+  margin-left: 2rem;
 }
 .home .buttons {
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.home .buttons .button button {
+  border: none;
+  background: rgba(12, 12, 12, 0.726);
+  padding: 20px 3.5rem;
+  border-radius: 10px;
+}
+.home .buttons .button button a {
+  color: #e7ecf1;
+  font-size: 1.1rem;
 }

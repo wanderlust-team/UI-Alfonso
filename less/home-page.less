@@ -1,0 +1,47 @@
+.home {
+  background: url("../images/bg_image_mountains.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    margin: 25px 0;
+    color: @ebony-clay;
+    font-size: 3rem;
+    font-family: @title-font;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: @title-font;
+    color: @ebony-clay;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  header {
+    margin-top: 30px;
+    margin-left: 2rem;
+  }
+
+  .buttons {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+
+    .button button {
+      border: none;
+      background: rgba(12, 12, 12, 0.726);
+      padding: 20px 3.5rem;
+      border-radius: 10px;
+
+      a {
+        color: @button-font-color;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

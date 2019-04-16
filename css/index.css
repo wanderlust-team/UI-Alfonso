@@ -1,6 +1,6 @@
 .container {
-  max-width: 800px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -140,42 +140,37 @@ html {
   box-sizing: border-box;
 }
 .home {
-  background: url("../images/bg_image_mountains.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background-image: url("../images/eiffel_tower.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
-.home h1 {
-  margin: 25px 0;
-  color: #23293b;
-  font-size: 3rem;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-.home h2 {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #23293b;
-  font-weight: bold;
-  font-size: 1.2rem;
+.home .logo img {
+  width: 40px;
+  height: 40px;
+  margin: 5px 1rem;
 }
 .home header {
-  margin-top: 30px;
-  margin-left: 2rem;
-}
-.home .buttons {
-  margin-bottom: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
-.home .buttons .button button {
-  border: none;
-  background: rgba(12, 12, 12, 0.726);
-  padding: 20px 3.5rem;
-  border-radius: 10px;
+.home header .nav-list {
+  display: flex;
+  margin-right: 2rem;
 }
-.home .buttons .button button a {
-  color: #e7ecf1;
-  font-size: 1.1rem;
+.home header .nav-list li {
+  margin: 0.7rem;
+  padding: 10px 0;
+}
+.home header .nav-list li:hover {
+  border-bottom: white solid 3px;
+  cursor: pointer;
+}
+.home header .nav-list a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
 }

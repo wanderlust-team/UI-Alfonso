@@ -1,46 +1,37 @@
 .home {
-  background: url("../images/bg_image_mountains.jpg") no-repeat center center
-    fixed;
-  background-size: cover;
+  background-image: url("../images/eiffel_tower.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  h1 {
-    margin: 25px 0;
-    color: @ebony-clay;
-    font-size: 3rem;
-    font-family: @title-font;
-    font-weight: bold;
-  }
-
-  h2 {
-    font-family: @title-font;
-    color: @ebony-clay;
-    font-weight: bold;
-    font-size: 1.2rem;
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 1rem;
   }
 
   header {
-    margin-top: 30px;
-    margin-left: 2rem;
-  }
-
-  .buttons {
-    margin-bottom: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 
-    .button button {
-      border: none;
-      background: rgba(12, 12, 12, 0.726);
-      padding: 20px 3.5rem;
-      border-radius: 10px;
+    .nav-list {
+      display: flex;
+      margin-right: 2rem;
+      li {
+        margin: 0.7rem;
+        padding: 10px 0;
+        &:hover {
+          border-bottom: white solid 3px;
+          cursor: pointer;
+        }
+      }
 
       a {
-        color: @button-font-color;
-        font-size: 1.1rem;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: white;
+        font-family: @fontFam;
       }
     }
   }

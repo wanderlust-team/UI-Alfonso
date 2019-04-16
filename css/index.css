@@ -1,13 +1,3 @@
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-@media (max-width: 500px) {
-  .container {
-    max-width: 450px;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -139,43 +129,229 @@ table {
 html {
   box-sizing: border-box;
 }
-.home {
-  background: url("../images/bg_image_mountains.jpg") no-repeat center center fixed;
-  background-size: cover;
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 450px;
+  }
+}
+header {
+  background-image: url("../images/eiffel_tower.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
   height: 100vh;
+  z-index: -1;
+}
+header h1.title {
+  display: inline-block;
+  margin-top: 6rem;
+  margin-left: 6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000000;
+  font-size: 5rem;
+}
+header .navigation {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
-.home h1 {
-  margin: 25px 0;
-  color: #23293b;
-  font-size: 3rem;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
+header .navigation img {
+  height: 40px;
+  width: 40px;
+  margin: 0.7rem;
 }
-.home h2 {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #23293b;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.home header {
-  margin-top: 30px;
-  margin-left: 2rem;
-}
-.home .buttons {
-  margin-bottom: 30px;
+header .nav-list {
   display: flex;
-  justify-content: space-around;
+  margin-right: 2rem;
 }
-.home .buttons .button button {
+header .nav-list li {
+  margin: 0.7rem;
+  padding: 10px 0;
+}
+header .nav-list li:hover {
+  border-bottom: white solid 3px;
+  cursor: pointer;
+}
+header .nav-list a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.nav-sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: calc(100vh - 40px);
+  padding: 0 5px;
+  background: red;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+.home {
+  background: white;
+}
+.home .explore {
+  margin: 0 auto;
+  width: 71%;
+}
+.home .explore .text-content {
+  text-align: left;
+}
+.home .explore .text-content h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.home .explore .text-content h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+}
+.home .explore .explore-widget {
+  background-image: url("../images/sections/explore_section.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto 30px auto;
+  border-radius: 3px;
+}
+.home .explore .explore-widget button {
   border: none;
-  background: rgba(12, 12, 12, 0.726);
-  padding: 20px 3.5rem;
+  background: white;
+  padding: 20px 2rem;
+  position: relative;
+  top: 45%;
+  left: 45%;
   border-radius: 10px;
+  opacity: 0.8;
 }
-.home .buttons .button button a {
-  color: #e7ecf1;
-  font-size: 1.1rem;
+.home .explore .explore-widget button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.home .row1 {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+}
+.home .row1 .row-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 55%;
+  background: #c4c8d2;
+  border-radius: 2px;
+}
+.home .row1 .row-text .text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 80%;
+}
+.home .row1 .row-text .text-container p {
+  text-align: left;
+  margin: 10px auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.home .row1 .row-text .text-container h2 {
+  text-align: left;
+  color: #505051;
+  font-size: 2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.home .row1 .row-text .text-container button {
+  margin: 30px 0;
+  padding: 1rem;
+  border: none;
+  background: #8a92a6;
+  border-radius: 3px;
+}
+.home .row1 .row-text .text-container button a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.home .row1 img {
+  width: 35%;
+  border-radius: 2px;
+}
+.home .row2 {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+}
+.home .row2 .row-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 35%;
+  background: #c4c8d2;
+  border-radius: 2px;
+}
+.home .row2 .row-text .text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 80%;
+}
+.home .row2 .row-text .text-container p {
+  text-align: left;
+  margin: 10px auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.home .row2 .row-text .text-container h2 {
+  text-align: left;
+  color: #505051;
+  font-size: 2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.home .row2 .row-text .text-container button {
+  margin: 30px 0;
+  padding: 1rem;
+  border: none;
+  background: #8a92a6;
+  border-radius: 3px;
+}
+.home .row2 .row-text .text-container button a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.home .row2 img {
+  width: 55%;
+  border-radius: 2px;
 }

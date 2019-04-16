@@ -1,38 +1,55 @@
 .home {
-  background-image: url("../images/eiffel_tower.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 80%;
-  height: 100vh;
-  .logo img {
-    width: 40px;
-    height: 40px;
-    margin: 5px 1rem;
-  }
+  background: @background-color;
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .explore {
+    margin: 0 auto;
+    width: 50%;
 
-    .nav-list {
-      display: flex;
-      margin-right: 2rem;
-      li {
-        margin: 0.7rem;
-        padding: 10px 0;
-        &:hover {
-          border-bottom: white solid 3px;
-          cursor: pointer;
+    .text-content {
+      text-align: left;
+
+      h2 {
+        font-family: @fontFam;
+        color: #222;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-family: @fontFam;
+        margin: 10px 0;
+      }
+    } // end of text content
+
+    .explore-widget {
+      background-image: url("../images/sections/explore_section.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: contain;
+      width: 100%;
+      height: 250px;
+      margin-bottom: 200px;
+      border-radius: 10px;
+
+      button {
+        border: none;
+        background: white;
+        padding: 20px 2rem;
+        position: relative;
+        // text-align: center;
+        top: 45%;
+        left: 45%;
+        border-radius: 10px;
+        opacity: 0.8;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          font-family: @fontFam;
         }
       }
-
-      a {
-        text-decoration: none;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: white;
-        font-family: @fontFam;
-      }
     }
-  }
-}
+  } // end of explore
+} // end of home

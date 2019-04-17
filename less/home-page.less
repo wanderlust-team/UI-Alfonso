@@ -45,9 +45,10 @@
       border-radius: 3px;
 
       @media @phone {
-        background-attachment: unset;
+        background-attachment: scroll;
         background-size: 100%;
         margin: 0 auto 10px auto;
+        box-shadow: none;
       }
 
       button {
@@ -87,12 +88,6 @@
       flex-direction: column;
       width: 100%;
       // margin: 0 auto;
-
-      .row-text {
-        width: 100%;
-        // .test();
-        margin: 0 auto;
-      }
     }
 
     // .test();
@@ -107,6 +102,13 @@
       border-radius: 2px;
       .boxshadow();
       // .test();
+
+      @media @phone {
+        width: 55%;
+        // .test();
+        margin: 0 auto;
+        box-shadow: none;
+      }
 
       .text-container {
         // .test();
@@ -162,6 +164,7 @@
         width: 65%;
         margin: 0 auto;
         margin-top: 20px;
+        box-shadow: none;
       }
     }
   } // end of row1
@@ -177,6 +180,7 @@
     @media @phone {
       flex-direction: column;
       width: 100%;
+      box-shadow: none;
       // margin: 0 auto;
     }
 
@@ -196,6 +200,7 @@
         width: 55%;
         // .test();
         margin: 0 auto;
+        box-shadow: none;
       }
       // .test();
 
@@ -254,6 +259,7 @@
         // .test();
         margin: 0 auto;
         margin-top: 20px;
+        box-shadow: none;
       }
     }
   } // end of row1

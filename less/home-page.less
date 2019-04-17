@@ -9,6 +9,14 @@
     .text-content {
       text-align: left;
 
+      @media @phone {
+        text-align: center;
+
+        h3 {
+          line-height: 1.5;
+        }
+      }
+
       h2 {
         font-family: @fontFam;
         color: #222;
@@ -35,6 +43,12 @@
 
       border-radius: 3px;
 
+      @media @phone {
+        background-attachment: unset;
+        background-size: 100%;
+        margin: 0 auto 10px auto;
+      }
+
       button {
         border: none;
         background: white;
@@ -45,6 +59,11 @@
         left: 45%;
         border-radius: 10px;
         opacity: 0.8;
+
+        @media @phone {
+          top: 35%;
+          left: 25%;
+        }
 
         a {
           text-decoration: none;
@@ -63,6 +82,18 @@
     margin-bottom: 30px;
     justify-content: space-evenly;
 
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      // margin: 0 auto;
+
+      .row-text {
+        width: 100%;
+        // .test();
+        margin: 0 auto;
+      }
+    }
+
     // .test();
 
     .row-text {
@@ -123,6 +154,12 @@
     img {
       width: 35%;
       border-radius: 2px;
+
+      @media @phone {
+        width: 65%;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
     }
   } // end of row1
 
@@ -134,6 +171,12 @@
     margin-bottom: 30px;
     justify-content: space-evenly;
 
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      // margin: 0 auto;
+    }
+
     // .test();
 
     .row-text {
@@ -144,6 +187,12 @@
       width: 35%;
       background: darken(@background-color, 10%);
       border-radius: 2px;
+
+      @media @phone {
+        width: 55%;
+        // .test();
+        margin: 0 auto;
+      }
       // .test();
 
       .text-container {
@@ -194,6 +243,13 @@
     img {
       width: 55%;
       border-radius: 2px;
+
+      @media @phone {
+        width: 60%;
+        // .test();
+        margin: 0 auto;
+        margin-top: 20px;
+      }
     }
   } // end of row1
 } // end of home

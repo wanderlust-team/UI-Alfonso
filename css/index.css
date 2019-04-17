@@ -171,7 +171,6 @@ header h1.title {
 header .navigation {
   display: flex;
   justify-content: space-between;
-  background: gray;
 }
 header .navigation img {
   height: 40px;
@@ -194,7 +193,7 @@ header .nav-list a {
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
-  color: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
@@ -253,6 +252,9 @@ footer {
   background-position: center;
   background-size: contain;
   width: 100%;
+  -webkit-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
   height: 250px;
   margin: 0 auto 30px auto;
   border-radius: 3px;
@@ -311,6 +313,9 @@ footer {
   width: 55%;
   background: #c4c8d2;
   border-radius: 2px;
+  -webkit-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
 }
 .home .row1 .row-text .text-container {
   display: flex;
@@ -350,6 +355,9 @@ footer {
 .home .row1 img {
   width: 35%;
   border-radius: 2px;
+  -webkit-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
 }
 @media (max-width: 500px) {
   .home .row1 img {
@@ -379,6 +387,9 @@ footer {
   width: 35%;
   background: #c4c8d2;
   border-radius: 2px;
+  -webkit-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
 }
 @media (max-width: 500px) {
   .home .row2 .row-text {
@@ -424,6 +435,9 @@ footer {
 .home .row2 img {
   width: 55%;
   border-radius: 2px;
+  -webkit-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
+  box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
 }
 @media (max-width: 500px) {
   .home .row2 img {

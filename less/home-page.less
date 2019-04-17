@@ -35,7 +35,7 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       width: 100%;
       .boxshadow();
       // .test();
@@ -43,6 +43,13 @@
       margin: 0 auto 30px auto;
 
       border-radius: 3px;
+
+      @media @tablet {
+        background-attachment: scroll;
+        background-size: 100%;
+        margin: 0 auto 10px auto;
+        box-shadow: none;
+      }
 
       @media @phone {
         background-attachment: scroll;
@@ -61,6 +68,11 @@
         left: 45%;
         border-radius: 10px;
         opacity: 0.8;
+
+        @media @tablet {
+          top: 40%;
+          left: 40%;
+        }
 
         @media @phone {
           top: 35%;
@@ -84,6 +96,11 @@
     margin-bottom: 30px;
     justify-content: space-evenly;
 
+    @media @tablet {
+      flex-direction: column;
+      width: 100%;
+    }
+
     @media @phone {
       flex-direction: column;
       width: 100%;
@@ -102,6 +119,13 @@
       border-radius: 2px;
       .boxshadow();
       // .test();
+
+      @media @tablet {
+        width: 90%;
+        // .test();
+        margin: 0 auto;
+        box-shadow: none;
+      }
 
       @media @phone {
         width: 55%;
@@ -159,6 +183,13 @@
       width: 35%;
       border-radius: 2px;
       .boxshadow();
+
+      @media @tablet {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 20px;
+        box-shadow: none;
+      }
 
       @media @phone {
         width: 65%;

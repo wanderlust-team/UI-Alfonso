@@ -11,7 +11,11 @@
     <div class="container home">
       <header>
         <nav class="navigation">
-          <img src="images/placeholder-logo.png" alt="" />
+          <img
+            src="images/placeholder-logo.png"
+            alt="Logo"
+            onclick="toggleNav()"
+          />
           <ul class="nav-list">
             <li><a href="#">Become a Guide!</a></li>
             <li><a href="#">Help</a></li>
@@ -28,6 +32,19 @@
 
         <h1 class="title">Wanderlust</h1>
       </header>
+
+      <aside class="nav-sidebar">
+        <ul>
+          <li><span>Become a Guide!</span></li>
+          <li><a href="#">Help</a></li>
+          <li>
+            <a href="https://wanderlust-frontend.netlify.com/signup">Sign Up</a>
+          </li>
+          <li>
+            <a href="https://wanderlust-frontend.netlify.com/">Log In</a>
+          </li>
+        </ul>
+      </aside>
 
       <section class="explore">
         <div class="text-content">
@@ -77,4 +94,6 @@
       </footer>
     </div>
   </body>
+
+  <script src="src/dropdown-menu.js"></script>
 </html>

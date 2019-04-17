@@ -30,13 +30,16 @@ header {
 
   .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     // background: gray;
 
     img {
       height: 40px;
       width: 40px;
       margin: 0.7rem;
+      position: fixed;
+      top: 0;
+      left: 0;
       // .test();
     }
   }
@@ -69,10 +72,38 @@ header {
 
 .nav-sidebar {
   position: fixed;
+  width: 50px;
   left: 0;
   bottom: 0;
-  width: 50px;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 60px);
   padding: 0 5px;
-  background: red;
+  background: #1b1b1b;
+  opacity: 0.9;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+
+  ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+    li {
+      line-height: 60px;
+      list-style: none;
+
+      a,
+      span {
+        display: block;
+        height: 60px;
+        padding: 0 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: @fontFam;
+        font-size: 1.1rem;
+        white-space: nowrap;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
 }

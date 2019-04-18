@@ -208,6 +208,11 @@
     margin-bottom: 30px;
     justify-content: space-evenly;
 
+    @media @tablet {
+      flex-direction: column;
+      width: 100%;
+    }
+
     @media @phone {
       flex-direction: column;
       width: 100%;
@@ -226,6 +231,13 @@
       background: darken(@background-color, 10%);
       border-radius: 2px;
       .boxshadow();
+
+      @media @tablet {
+        width: 90%;
+        // .test();
+        margin: 0 auto;
+        box-shadow: none;
+      }
 
       @media @phone {
         width: 55%;
@@ -284,6 +296,13 @@
       width: 55%;
       border-radius: 2px;
       .boxshadow();
+
+      @media @tablet {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 20px;
+        box-shadow: none;
+      }
 
       @media @phone {
         width: 60%;

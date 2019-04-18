@@ -553,7 +553,7 @@ footer {
     box-shadow: none;
   }
 }
-.home header {
+.about header {
   background-image: url("../images/bg_image_about.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -563,18 +563,18 @@ footer {
   z-index: -1;
 }
 @media (max-width: 500px) {
-  .home header {
+  .about header {
     background-image: none;
     height: auto;
   }
 }
 @media (min-width: 1000px) {
-  .home .people {
+  .about .people {
     display: flex;
     flex-wrap: wrap;
   }
 }
-.home .people .person-card {
+.about .people .person-card {
   width: 90%;
   margin: 0 auto 20px;
   padding: 10px;
@@ -584,11 +584,11 @@ footer {
   align-items: center;
 }
 @media (min-width: 1000px) {
-  .home .people .person-card {
+  .about .people .person-card {
     width: 30%;
   }
 }
-.home .people .person-card .person-image {
+.about .people .person-card .person-image {
   width: 300px;
   border-radius: 50%;
   -webkit-box-shadow: 20px 34px 75px -38px rgba(0, 0, 0, 0.61);
@@ -597,26 +597,26 @@ footer {
   cursor: pointer;
 }
 @media (min-width: 1000px) {
-  .home .people .person-card .person-image {
+  .about .people .person-card .person-image {
     border-radius: 5px;
   }
 }
-.home .people .person-card .person-text {
+.about .people .person-card .person-text {
   width: 300px;
 }
-.home .people .person-card .person-text h2 {
+.about .people .person-card .person-text h2 {
   font-size: 1.3rem;
   text-align: center;
   padding: 15px;
   font-family: "Montserrat", Arial, sans-serif;
 }
-.home .people .person-card .person-text p {
+.about .people .person-card .person-text p {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 100;
   font-size: 0.9rem;
   line-height: 1.5;
   text-align: center;
 }
-.home .people .person-card .hidden {
+.about .people .person-card .hidden {
   display: none;
 }

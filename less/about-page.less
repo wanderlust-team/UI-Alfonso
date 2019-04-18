@@ -14,6 +14,13 @@
     }
   } // header
 
+  .title {
+    text-align: center;
+    font-family: @fontFam;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 5px rgba(25, 11, 7, 0.6);
+  }
   .people {
     @media (min-width: 1000px) {
       display: flex;
@@ -46,11 +53,13 @@
 
       .person-text {
         width: 300px;
+
         h2 {
           font-size: 1.3rem;
           text-align: center;
           padding: 15px;
           font-family: @fontFam;
+          line-height: 1.5;
         }
 
         p {
@@ -58,7 +67,7 @@
           font-weight: 100;
           font-size: 0.9rem;
           line-height: 1.5;
-          text-align: center;
+          text-align: justify;
         }
       }
 

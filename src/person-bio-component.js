@@ -12,6 +12,7 @@ class Person {
       item.classList.add("hidden");
     });
 
+    this.info.style.height = "fit-content";
     this.info.classList.toggle("hidden");
   }
 }

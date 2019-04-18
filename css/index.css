@@ -141,7 +141,7 @@ html {
 }
 header h1.title {
   display: inline-block;
-  text-shadow: 2px 2px 5px rgba(25, 11, 7, 0.6);
+  text-shadow: 2px 2px 5px #190b0799;
   margin-top: 6rem;
   margin-left: 6rem;
   font-family: "Montserrat", Arial, sans-serif;
@@ -568,6 +568,13 @@ footer {
     height: auto;
   }
 }
+.about .title {
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 5px rgba(25, 11, 7, 0.6);
+}
 @media (min-width: 1000px) {
   .about .people {
     display: flex;
@@ -609,13 +616,14 @@ footer {
   text-align: center;
   padding: 15px;
   font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.5;
 }
 .about .people .person-card .person-text p {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 100;
   font-size: 0.9rem;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
 }
 .about .people .person-card .hidden {
   display: none;

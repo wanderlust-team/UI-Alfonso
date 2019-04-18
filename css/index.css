@@ -139,21 +139,6 @@ html {
     max-width: 450px;
   }
 }
-header {
-  background-image: url("../images/eiffel_tower.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  margin-bottom: 30px;
-  z-index: -1;
-}
-@media (max-width: 500px) {
-  header {
-    background-image: none;
-    height: auto;
-  }
-}
 header h1.title {
   display: inline-block;
   text-shadow: 2px 2px 5px rgba(25, 11, 7, 0.6);
@@ -175,25 +160,18 @@ header .navigation {
   display: flex;
   justify-content: flex-end;
 }
-header .navigation .menu-btn {
-  height: 40px;
-  width: 40px;
-  margin: 0.7rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.9;
-  background-image: url("../images/placeholder-logo.png");
-  background-position: center;
-  background-size: cover;
-}
 header .navigation img {
+  padding: 5px;
   height: 40px;
   width: 40px;
   position: fixed;
   top: 0;
   left: 0;
   opacity: 0.9;
+  cursor: pointer;
+}
+header .navigation img:hover {
+  opacity: 0.5;
 }
 header .nav-list {
   display: flex;
@@ -265,9 +243,29 @@ footer {
 .home {
   background: white;
 }
+.home header {
+  background-image: url("../images/eiffel_tower.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 30px;
+  z-index: -1;
+}
+@media (max-width: 500px) {
+  .home header {
+    background-image: none;
+    height: auto;
+  }
+}
 .home .explore {
   margin: 0 auto;
   width: 71%;
+}
+@media (max-width: 500px) {
+  .home .explore {
+    width: 95%;
+  }
 }
 .home .explore .text-content {
   text-align: left;
@@ -388,7 +386,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .row1 .row-text {
-    width: 55%;
+    width: 90%;
     margin: 0 auto;
     box-shadow: none;
   }
@@ -445,9 +443,9 @@ footer {
 }
 @media (max-width: 500px) {
   .home .row1 img {
-    width: 65%;
+    width: 99%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
     box-shadow: none;
   }
 }
@@ -492,7 +490,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .row2 .row-text {
-    width: 55%;
+    width: 90%;
     margin: 0 auto;
     box-shadow: none;
   }
@@ -549,9 +547,54 @@ footer {
 }
 @media (max-width: 500px) {
   .home .row2 img {
-    width: 60%;
+    width: 97%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
     box-shadow: none;
   }
+}
+.home header {
+  background-image: url("../images/bg_image_about.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 30px;
+  z-index: -1;
+}
+@media (max-width: 500px) {
+  .home header {
+    background-image: none;
+    height: auto;
+  }
+}
+.home .person-card {
+  width: 90%;
+  margin: 0 auto 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .person-card .person-image {
+  width: 300px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.home .person-card .person-text h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 15px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.home .person-card .person-text p {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.home .person-card .hidden {
+  display: none;
 }

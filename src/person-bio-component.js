@@ -12,7 +12,7 @@ class Person {
       item.classList.add("hidden");
     });
 
-    this.info.classList.remove("hidden");
+    this.info.classList.toggle("hidden");
   }
 }
 
